@@ -1,0 +1,9 @@
+etenv:
+  image: debian
+  extends:
+    file: volumes.yml
+    service: etenv
+node:
+  extends:
+    file: ./etc/node/docker-compose.yml
+    service: node
